@@ -1,8 +1,8 @@
 class FizzBuzz:
-    def affiche(self,nombre):
+    def affiche(self,nombreMin,nombreMax):
         resultat=""
 
-        for i in range(1, nombre + 1):
+        for i in range(nombreMin, nombreMax + 1):
             if i%15==0 :
                 resultat +="FrisBee"
             elif i%5==0:
@@ -13,6 +13,8 @@ class FizzBuzz:
                 resultat += str(i)
         
         return resultat 
-    
-FizzBuzz.affiche(5, 10)
-FizzBuzz.affiche(10, 16)
+
+
+if __name__=='__main__':
+    FizzBuzz.affiche(5, 10)
+    FizzBuzz.affiche(10, 16)
