@@ -13,3 +13,6 @@ class FizzBuzz:
                 resultat += str(i)
         
         return resultat 
+    
+FizzBuzz.affiche(5, 10)
+FizzBuzz.affiche(10, 16)
