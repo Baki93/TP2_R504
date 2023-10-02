@@ -14,5 +14,8 @@ class Test_FizzBuzz(unittest.TestCase):
         with self.subTest(self):
             self.assertEqual(self.instance.affiche(1,3),"12Fizz")
 
+    def test_affiche_avec_param(self):
+        self.assertEqual (self.instance.affiche(5,10),"BuzzFizz78FizzBuzz")
+        self.assertEqual (self.instance.affiche(10,16),"Buzz11Fizz1314FrisBee16")
 if __name__=='__main__':
     unittest.main()
