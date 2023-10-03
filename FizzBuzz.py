@@ -12,9 +12,4 @@ class FizzBuzz:
             else:
                 resultat += str(i)
         
-        return resultat 
-
-
-if __name__=='__main__':
-    FizzBuzz.affiche(5, 10)
-    FizzBuzz.affiche(10, 16)
+        return resultat
